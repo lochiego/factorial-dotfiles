@@ -25,3 +25,5 @@ alias gca='git commit --amend'
 
 # Devenv
 alias devenv='tmuxinator start -p gitpod/.tmuxinator.yml'
+
+alias update='cd backend && bin/update && cd .. && make session.backend'
