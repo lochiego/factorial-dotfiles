@@ -28,3 +28,6 @@ alias devenv='tmuxinator start -p gitpod/.tmuxinator.yml'
 
 alias update='cd backend && bin/update && cd .. && make session.backend'
 alias force-update='cd backend && bin/rails db:do_reset && cd .. && make session.backend'
+alias frontend="make session.frontend"
+alias backend="make session.backend"
+alias e2e="make e2e.run"
