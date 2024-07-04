@@ -31,3 +31,5 @@ alias force-update='cd backend && bin/rails db:do_reset && cd ..'
 alias frontend="make session.frontend"
 alias backend="make session.backend"
 alias e2e="make e2e.run"
+
+alias reseed="SEED_PRESET=english_small cd backend && bin/rails db:seeds:restore && cd .."
