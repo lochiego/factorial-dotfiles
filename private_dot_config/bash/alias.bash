@@ -27,7 +27,7 @@ alias gca='git commit --amend'
 alias devenv='tmuxinator start -p gitpod/.tmuxinator.yml'
 
 alias update='cd /home/factorial/workspace/factorial/backend && bin/update && cd ..'
-alias force-update='cd /home/factorial/workspace/factorial/backend && bin/rails db:do_reset && cd ..'
+alias force-update='cd /home/factorial/workspace/factorial/backend && bin/rails db:drop db:create db:seeds:restore db:migrate data:migrate && cd ..'
 alias frontend="make session.frontend"
 alias backend="make session.backend"
 alias e2e="make e2e.run"
